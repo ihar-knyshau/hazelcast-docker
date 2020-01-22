@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM koosiedemoer/netty-tcnative-alpine
 
 # Versions of Hazelcast and Hazelcast plugins
 ARG HZ_VERSION=3.12.5
