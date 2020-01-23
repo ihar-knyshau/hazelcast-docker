@@ -56,9 +56,7 @@ RUN echo "Updating Alpine system" \
     && echo "Granting read permission to ${HZ_HOME}" \
     && chmod -R +r $HZ_HOME \
     && echo "Setting Pardot ID to 'docker'" \
-    && echo 'hazelcastDownloadId=docker' > hazelcast-download.properties \
-    && echo "Cleaning APK packages" \
-    && rm -rf /var/cache/apk/*
+    && echo 'hazelcastDownloadId=docker' > hazelcast-download.properties
 
 WORKDIR ${HZ_HOME}
 
